@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./fontAwesomee/css/all.min.css">
+	<script src="https://kit.fontawesome.com/c99160b4fa.js" crossorigin="anonymous"></script>
+	<title>CityMart_connect</title>
+</head>
+<body>
+	<div class="contenu">
+		<input type="checkbox" id="logsign">
+		<div class="sign">
+			<div class="sign_head">
+				<h6>Create Account</h6>
+				<div class="social_sign">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<p>Or use your email for registration</p>
+			</div>
+			<form method="post">
+				<div class="user_sign">
+					<label for="user_sign">
+						<i class="fa fa-user"></i>
+					</label>
+					<input type="text" name="name_sign" id="user_sign" placeholder="Name" autocomplete="off">
+				</div>
+				<div class="email_sign">
+					<label for="email_sign">
+						<i class="fa fa-envelope"></i>
+					</label>
+					<input type="email" name="email_sign" id="email_sign" placeholder="Email" autocomplete="off">
+				</div>
+				<div class="pass_sign">
+					<label for="pass_user">
+						<i class="fa fa-lock"></i>
+					</label>
+					<input type="password" name="password_sign" id="pass_user" maxlength="14" placeholder="Password">
+				</div>
+				<input type="submit" name="sign_submit" value="SIGN UP">
+			</form>
+		</div>
+
+
+
+		<div class="log">
+			<div class="log_head">
+				<h6>Sign in</h6>
+				<div class="social_log">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<p>Or user your account</p>
+			</div>
+			<form method="post">
+				<div class="email_log">
+					<label for="email_log">
+						<i class="fa fa-envelope"></i>
+					</label>
+					<input type="email" name="email_log" id="email_log" placeholder="Email" autocomplete="off" >
+				</div>
+				<div class="pass_log">
+					<label for="pass_user">
+						<i class="fa fa-lock"></i>
+					</label>
+					<input type="password" name="password_log" id="pass_user" maxlength="14" placeholder="Password" >
+				</div>
+				<input type="submit" name="log_submit" value="SIGN IN">
+			</form>
+			<a href="#">Forgot yout password?</a>
+		</div>
+		<div class="box_sign">
+			<div class="logo_sign">
+				<h5>City<span>Mart</span></h5>
+			</div>
+			<p>Enter your personnal details and start journey with us</p>
+			<label for="logsign">sign up</label><br><br>
+			<a href="#">EXIT</a>
+		</div>
+		<div class="box_log">
+			<div class="logo_log">
+				<h5>City<span>Mart</span></h5>
+			</div>
+			<p>To keep connected with us please login with your personal info</p>
+			<label for="logsign">sign in</label><br><br>
+			<a href="#">EXIT</a>
+		</div>
+	</div>
+</body>
+
+<style type="text/css">
+	*{
+	margin: 0;
+	padding: 0;
+}
+
+.contenu{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(./pexels-mister-mister-2442889.jpg);
+	background-position: center 50%;
+	background-size: cover;
+}
+.contenu::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, .2);
+}
+
+.sign{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-86%,-50%);
+	width: 34%;
+	height: 440px;
+	text-align: center;
+	background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140,0.03) 0%, rgba(140, 140, 140,0.03) 25%,transparent 25%, transparent 100%),radial-gradient(circle at 28% 63%, rgba(143, 143, 143,0.03) 0%, rgba(143, 143, 143,0.03) 16%,transparent 16%, transparent 100%),radial-gradient(circle at 81% 56%, rgba(65, 65, 65,0.03) 0%, rgba(65, 65, 65,0.03) 12%,transparent 12%, transparent 100%),radial-gradient(circle at 26% 48%, rgba(60, 60, 60,0.03) 0%, rgba(60, 60, 60,0.03) 6%,transparent 6%, transparent 100%),radial-gradient(circle at 97% 17%, rgba(150, 150, 150,0.03) 0%, rgba(150, 150, 150,0.03) 56%,transparent 56%, transparent 100%),radial-gradient(circle at 50% 100%, rgba(25, 25, 25,0.03) 0%, rgba(25, 25, 25,0.03) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 55% 52%, rgba(69, 69, 69,0.03) 0%, rgba(69, 69, 69,0.03) 6%,transparent 6%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+	border-radius: 10px 0px 0px 10px;
+	visibility: hidden;
+	transition: all linear .7s;
+}
+.sign_head{
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+.sign_head h6{
+	font-family: fantasy;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	margin-top: 35px;
+}
+.sign_head .social_sign{
+	margin-top: 40px;
+	margin-bottom: 33px;
+}
+.sign_head .social_sign a{
+	margin-left: 10px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+	font-size: 1.2em;
+	padding: 7px 13px 7px 13px;
+	border-radius: 50%;
+	color: black;
+	text-decoration: none;
+	transition: all linear .4s;
+}
+.sign_head .social_sign a:hover{
+	transition: linear .4s;
+	background: #e9ecef;
+}
+.sign_head .social_sign a:nth-child(2){
+	padding: 7px 8px 7px 8px;
+}
+.sign_head .social_sign a:last-child{
+	padding: 7px 12px 7px 12px;
+}
+.sign_head>p{
+	font-family: monospace;
+	font-size: .8em;
+	word-spacing: -1.2px;
+}
+
+.user_sign{
+	display: flex;
+	align-items: stretch;
+	margin-bottom: 13px;
+}
+.user_sign label{
+	background: #dee2e6;
+	margin-right: -4px;
+	margin-left: 40px;
+	height: 26px;
+	padding: 0px 25px 0px 15px;	
+	border-radius: 4px 0px 0px 4px;
+}
+
+.user_sign label i{
+	margin-top: 5px;
+}
+
+.user_sign input{
+	width: 330px;
+	border: none;
+	height: 26px;
+	outline: none;
+	border-radius: 0px 4px 4px 0px;
+	background: #dee2e6;
+}
+.email_sign{
+	display: flex;
+	align-items: stretch;
+	margin-bottom: 13px;
+}
+.email_sign label{
+	background: #dee2e6;
+	margin-right: -4px;
+	margin-left: 40px;
+	height: 26px;
+	padding: 0px 25px 0px 15px;	
+	border-radius: 4px 0px 0px 4px;
+}
+
+.email_sign label i{
+	margin-top: 5px;
+}
+
+.email_sign input{
+	width: 330px;
+	border: none;
+	height: 26px;
+	outline: none;
+	border-radius: 0px 4px 4px 0px;
+	background: #dee2e6;
+}
+.pass_sign{
+	display: flex;
+	align-items: stretch;
+	margin-bottom: 25px;
+}
+.pass_sign label{
+	background: #dee2e6;
+	margin-right: -4px;
+	margin-left: 40px;
+	height: 26px;
+	padding: 0px 25px 0px 15px;	
+	border-radius: 4px 0px 0px 4px;
+}
+
+.pass_sign label i{
+	margin-top: 5px;
+}
+
+.pass_sign input{
+	width: 330px;
+	border: none;
+	height: 26px;
+	outline: none;
+	border-radius: 0px 4px 4px 0px;
+	background: #dee2e6;
+}
+
+.sign input[type=submit]{
+	width: 30%;
+	font-size: 1.5em;
+	cursor: pointer;
+	padding: 3px 0px;
+	font-weight: bold;
+	font-family: monospace;
+	margin-top: 10px;
+	border-radius: 1em;
+	border: none;
+	background: #212529;
+	color: white;
+	margin-bottom: 50px;
+	transition: all linear .3s;
+}
+.sign input[type=submit]:hover{
+	transition: linear .3s;
+	background: #20c997;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .6);
+}
+
+
+
+
+
+
+
+
+.log{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-86%,-50%);
+	width: 34%;
+	height: 440px;
+	text-align: center;
+	background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140,0.03) 0%, rgba(140, 140, 140,0.03) 25%,transparent 25%, transparent 100%),radial-gradient(circle at 28% 63%, rgba(143, 143, 143,0.03) 0%, rgba(143, 143, 143,0.03) 16%,transparent 16%, transparent 100%),radial-gradient(circle at 81% 56%, rgba(65, 65, 65,0.03) 0%, rgba(65, 65, 65,0.03) 12%,transparent 12%, transparent 100%),radial-gradient(circle at 26% 48%, rgba(60, 60, 60,0.03) 0%, rgba(60, 60, 60,0.03) 6%,transparent 6%, transparent 100%),radial-gradient(circle at 97% 17%, rgba(150, 150, 150,0.03) 0%, rgba(150, 150, 150,0.03) 56%,transparent 56%, transparent 100%),radial-gradient(circle at 50% 100%, rgba(25, 25, 25,0.03) 0%, rgba(25, 25, 25,0.03) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 55% 52%, rgba(69, 69, 69,0.03) 0%, rgba(69, 69, 69,0.03) 6%,transparent 6%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+	border-radius: 10px 0px 0px 10px;
+	visibility: visible;
+	transition: all linear .7s;
+}
+.log_head{
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+.log_head h6{
+	font-family: fantasy;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	margin-top: 35px;
+}
+.log_head .social_log{
+	margin-top: 40px;
+	margin-bottom: 33px;
+}
+.log_head .social_log a{
+	margin-left: 10px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+	font-size: 1.2em;
+	padding: 7px 13px 7px 13px;
+	border-radius: 50%;
+	color: black;
+	text-decoration: none;
+	transition: all linear .4s;
+}
+.log_head .social_log a:hover{
+	transition: linear .4s;
+	background: #e9ecef;
+}
+.log_head .social_log a:nth-child(2){
+	padding: 7px 8px 7px 8px;
+}
+.log_head .social_log a:last-child{
+	padding: 7px 12px 7px 12px;
+}
+.log_head>p{
+	font-family: monospace;
+	font-size: .8em;
+	word-spacing: -1.2px;
+}
+
+.email_log{
+	display: flex;
+	align-items: stretch;
+	margin-bottom: 13px;
+}
+.email_log label{
+	background: #dee2e6;
+	margin-right: -4px;
+	margin-left: 40px;
+	height: 26px;
+	padding: 0px 25px 0px 15px;	
+	border-radius: 4px 0px 0px 4px;
+}
+
+.email_log label i{
+	margin-top: 5px;
+}
+
+.email_log input{
+	width: 330px;
+	border: none;
+	height: 26px;
+	outline: none;
+	border-radius: 0px 4px 4px 0px;
+	background: #dee2e6;
+}
+.pass_log{
+	display: flex;
+	align-items: stretch;
+	margin-bottom: 25px;
+}
+.pass_log label{
+	background: #dee2e6;
+	margin-right: -4px;
+	margin-left: 40px;
+	height: 26px;
+	padding: 0px 25px 0px 15px;	
+	border-radius: 4px 0px 0px 4px;
+}
+
+.pass_log label i{
+	margin-top: 5px;
+}
+
+.pass_log input{
+	width: 330px;
+	border: none;
+	height: 26px;
+	outline: none;
+	border-radius: 0px 4px 4px 0px;
+	background: #dee2e6;
+}
+
+.log input[type=submit]{
+	width: 30%;
+	font-size: 1.4em;
+	padding: 5px 0px;
+	font-weight: bold;
+	font-family: monospace;
+	border-radius: 1em;
+	border: none;
+	background: #212529;
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	transition: all linear .3s;
+}
+.log input[type=submit]:hover{
+	transition: linear .3s;
+	background: #20c997;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .6);
+}
+
+.log>a{
+	position: relative;
+	color: black;
+	top: -29%;
+	font-size: 14px;
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+.log>a:hover{
+	border-bottom: 1px solid #20c997;
+}
+
+
+
+
+
+
+
+
+.box_sign{
+	position: absolute;
+	background: red;
+	width: 24%;
+	height: 440px;
+	left: 54.7%;
+	top: 16.9%;
+	z-index: 1000000;
+	align-items: center;
+	text-align: center;
+	background: #232b2b;
+	visibility: visible;
+	border-radius: 0px 10px 10px 0px;
+	transition: all linear .7s;
+}
+.box_sign .logo_sign{
+	width: 200px;
+	margin-left: -10px;
+	margin-top: 80px;
+	margin-bottom: 35px;
+}
+.box_sign .logo_sign h5{
+	position: relative;
+	font-size: 2.5em;
+	font-family: fantasy;
+	top: 27%;
+	left: 15%;
+	width: 300px;
+	color: white;
+}
+.box_sign .logo_sign h5 span{
+	background-image: linear-gradient(62deg, rgb(233, 121, 112),rgb(213, 192, 80));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	width: 100%;
+}
+.box_sign>p{
+	font-size: 1em;
+	font-family: verdana;
+	color: white;
+	padding: 0px 20px;
+	margin-bottom: 35px;
+	user-select: none;
+}
+.box_sign>label{
+	position: relative;
+	margin-top: 15px;
+	color: white;
+	font-family: monospace;
+	font-weight: 800;
+	border: 1px solid white;
+	text-transform: uppercase;
+	padding: 5px 25px 5px 25px;
+	border-radius: 1rem;
+	font-size: 1.3em;
+	cursor: pointer;
+	transition: all linear .3s;
+}
+.box_sign label:hover{
+	transition: linear .3s;
+	background: #20c997;
+}
+.box_sign>a{
+	text-decoration: none;
+	color: white;
+	font-weight: 800;
+	font-family: monospace;
+	letter-spacing: 1px;
+	padding: 5px 25px 5px 25px;
+	border-radius: 1rem;
+	background: #dc3545;
+	border: .5px solid #ff001d;
+}
+.box_sign>a:hover{
+	transition: linear .3s;
+	background: #ff001d;
+}
+
+
+
+
+.box_log{
+	position: absolute;
+	background: red;
+	width: 24%;
+	height: 440px;
+	left: 54.7%;
+	top: 16.9%;
+	z-index: 10000;
+	align-items: center;
+	text-align: center;
+	background: #232b2b;
+	visibility: hidden;
+	border-radius: 0px 10px 10px 0px;
+	transition: all linear .7s;
+}
+.box_log .logo_log{
+	width: 200px;
+	margin-left: -10px;
+	margin-top: 80px;
+	margin-bottom: 35px;
+}
+.box_log .logo_log h5{
+	position: relative;
+	font-size: 2.5em;
+	font-family: fantasy;
+	top: 27%;
+	left: 15%;
+	width: 300px;
+	color: white;
+}
+.box_log .logo_log h5 span{
+	background-image: linear-gradient(62deg, rgb(233, 121, 112),rgb(213, 192, 80));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	width: 100%;
+}
+.box_log>p{
+	font-size: 1em;
+	font-family: verdana;
+	color: white;
+	padding: 0px 20px;
+	margin-bottom: 35px;
+}
+.box_log>label{
+	margin-top: 30px;
+	color: white;
+	font-family: monospace;
+	font-weight: 800;
+	border: 1px solid white;
+	text-transform: uppercase;
+	padding: 5px 25px 5px 25px;
+	border-radius: 1rem;
+	font-size: 1.3em;
+	cursor: pointer;
+	transition: all linear .3s;
+}
+.box_log>label:hover{
+	transition: linear .3s;
+	background: #20c997;
+}
+
+.box_log>a{
+	text-decoration: none;
+	color: white;
+	font-weight: 800;
+	font-family: monospace;
+	letter-spacing: 1px;
+	padding: 5px 25px 5px 25px;
+	border-radius: 1rem;
+	background: #dc3545;
+	border: .5px solid #ff001d;
+}
+.box_log>a:hover{
+	transition: linear .3s;
+	background: #ff001d;
+}
+
+
+
+
+
+
+#logsign{
+	display: none;
+}
+
+#logsign:checked~ .box_sign{
+	left: 20.7%;
+	border-radius: 10px 0px 0px 10px;
+	visibility: hidden;
+	transition: all linear .7s;
+}
+#logsign:checked~ .box_log{
+	left: 20.7%;
+	visibility: visible;
+	border-radius: 10px 0px 0px 10px;
+	transition: all linear .7s;
+}
+#logsign:checked~.log{
+	visibility: hidden;
+	left: 73.8%;
+	border-radius: 0px 10px 10px 0px;
+	transition: all linear .7s;
+}
+#logsign:checked~.sign{
+	visibility: visible;
+	left: 73.8%;
+	border-radius: 0px 10px 10px 0px;
+	transition: all linear .7s;
+}
+</style>
+</html>
